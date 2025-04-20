@@ -4,22 +4,21 @@
   <meta charset="UTF-8">
   <title>背景页面</title>
   <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      overflow: hidden; /* 不允许出现滚动条 */
-      width: 100vw;
-      height: 100vh;
-    }
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  background-color: white; /* 空余部分用白色填充 */
+}
 
-    body {
-      background-image: url('beijing.jpg');
-      background-size: cover; /* 背景铺满 */
-      background-position: center;
-      background-repeat: no-repeat;
-      position: relative;
-      font-family: sans-serif;
-    }
+body {
+  background-image: url('beijing.jpg');
+  background-size: contain;           /* 按比例缩放以完整显示整个图像 */
+  background-repeat: no-repeat;       /* 不重复 */
+  background-position: center center; /* 居中对齐 */
+}
 
     .text-block {
       position: absolute;
