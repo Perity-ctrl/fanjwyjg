@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>背景页面</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden; /* 不允许出现滚动条 */
+      width: 100vw;
+      height: 100vh;
+    }
+
+    body {
+      background-image: url('beijing.jpg');
+      background-size: cover; /* 背景铺满 */
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+      font-family: sans-serif;
+    }
+
+    .text-block {
+      position: absolute;
+      color: white; /* 或根据背景换成黑色 */
+    }
+
+    #stat1 {
+      top: 20px;
+      left: 30px;
+      font-size: 24px;
+    }
+
+    #num1 {
+      top: 60px;
+      left: 30px;
+      font-size: 18px;
+    }
+
+    #stat2 {
+      top: 120px;
+      left: 300px;
+      font-size: 24px;
+    }
+
+    #num2 {
+      top: 160px;
+      left: 300px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="text-block" id="stat1">统计1</div>
+  <div class="text-block" id="num1">数字1</div>
+  <div class="text-block" id="stat2">统计2</div>
+  <div class="text-block" id="num2">数字2</div>
+
+</body>
+</html>
