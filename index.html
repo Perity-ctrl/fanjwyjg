@@ -6,11 +6,12 @@
   <style>
     body {
       margin: 0;
-      height: 100vh;
-      background-image: url('a.jpg'); /* 背景图 */
-      background-size: cover;
-      background-position: center;
-      position: relative;
+      overflow: auto; /* 默认就是 auto，其实可以不写 */
+    }
+    img {
+      display: block;
+      width: auto;
+      height: auto;
     }
 
     .icon-link {
