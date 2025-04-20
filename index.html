@@ -1,17 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>欢迎</title>
+  <meta charset="UTF-8">
+  <title>图标定位示例</title>
   <style>
     body {
       margin: 0;
-      background-image: url('your-image.jpg');
+      height: 100vh;
+      background-image: url('background.jpg'); /* 背景图 */
       background-size: cover;
       background-position: center;
-      height: 100vh; /* 视口高度 */
+      position: relative;
     }
+
+    .icon-link {
+      position: absolute;
+      opacity: 0.5;
+      transition: opacity 0.3s ease;
+    }
+
+    .icon-link:hover {
+      opacity: 1;
+    }
+
+    .icon-link img {
+      width: 80px; /* 图标大小 */
+      cursor: pointer;
+    }
+
+    /* 自定义图标位置 */
+    #icon-a { top: 40%; left: 3%; }   /* 左边中间 */
+    #icon-b { top: 30%; right: 3%; }  /* 右上 */
+    #icon-c { bottom: 20%; right: 3%; } /* 右下 */
   </style>
 </head>
 <body>
+
+  <a class="icon-link" id="icon-a" href="pageA.html">
+    <img src="a.png" alt="跳转A">
+  </a>
+
+  <a class="icon-link" id="icon-b" href="pageB.html">
+    <img src="b.png" alt="跳转B">
+  </a>
+
+  <a class="icon-link" id="icon-c" href="pageC.html">
+    <img src="c.png" alt="跳转C">
+  </a>
+
 </body>
 </html>
