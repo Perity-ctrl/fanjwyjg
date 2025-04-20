@@ -4,11 +4,13 @@
   <meta charset="UTF-8">
   <title>图标定位示例</title>
   <style>
-    body {
-      margin: 0;
-      overflow: auto; /* 默认就是 auto，其实可以不写 */
-    }
-    img {
+body {
+  margin: 0;
+  overflow: auto;
+  position: relative;
+}
+
+    img.background {
       display: block;
       width: auto;
       height: auto;
@@ -25,20 +27,19 @@
     }
 
     .icon-link img {
-      width: 80px; /* 图标大小 */
+      width: 80px;
       cursor: pointer;
     }
 
     /* 自定义图标位置 */
-    #icon-a { top: 40%; left: 3%; }   /* 左边中间 */
-    #icon-b { top: 30%; right: 3%; }  /* 右上 */
-    #icon-c { bottom: 20%; right: 3%; } /* 右下 */
+    #icon-a { top: 40%; left: 3%; }
+    #icon-b { top: 30%; right: 3%; }
+    #icon-c { bottom: 20%; right: 3%; }
   </style>
 </head>
 <body>
-  <img src="a.jpg" alt="全景图片">
-</body>
-<body>
+
+  <img class="background" src="a.jpg" alt="全景图片">
 
   <a class="icon-link" id="icon-a" href="map.HTML">
     <img src="lv1.png" alt="跳转A">
